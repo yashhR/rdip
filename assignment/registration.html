@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<style type="text/css">
+			#menu{
+				width:100%;
+				height:50px; 
+				background-color: black;
+
+			}
+			#menu ul li{
+				color: white;
+				list-style-type: none;
+				float: left;
+				margin-right: 30px;
+				font-size: 20px;
+				line-height: 50px;
+			}
+			#menu ul li a{
+		color:white;
+		text-decoration: none;
+						}
+
+			.content{
+				padding-top: 30px;
+					}
+
+			#table{
+				font-weight: bold;
+				font-size: 20px;
+				text-align: center;
+			}
+			#table tr{
+				height: 30px;
+			}
+			
+			#table input[type="text"]{
+				width: 60%;
+				height:25px;
+			}
+			
+		</style>
+			
+	
+	</head>
+	<body>
+		<div id="header">
+			<a href="https://www.iitt.ac.in/" target="_blank"><img src="logo.png" width="150px" height="100px"></a>
+			<a href="https://serc.iiit.ac.in/rdip" target="_blank" style="float: right;font-size: 30px;font-weight: bold">RDIP</a>
+		</div>
+		<div class="main">
+			<div id="menu">
+				<ul>
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="registration.html">Registration Form</a></li>
+				</ul>
+				
+			</div>
+			<div class="content">
+				<form method="get" action="details.html">
+				<table cellspacing="5" id="table" width="700">
+					<tr>
+						<td>First name:</td>
+						<td><input type="text" name="fname" required></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input type="text" name="email" required></td>
+					</tr>
+					<tr>
+						<td>Phone No:</td>
+						<td><input type="text" name="phone" required></td>
+					</tr>
+					<tr>
+						<td>Gender:</td>
+						<td><input type="radio">Male<input type="radio">Female<input type="radio">Other</td>
+					</tr>
+					<tr>
+						<td>Reason for RDIP:</td>
+						<td><input type="checkbox" >HTML<input type="checkbox" >CSS<input type="checkbox" >JavaScript</td>
+					</tr>
+					<tr>
+						<td>College:</td>
+						<td><input type="text" name="college"required></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="Terms"required></td>
+						<td>I declare above details given by me are true.</td>
+					</tr>
+					<tr>
+						<td><input  type="submit" name="submit"></td>
+						<td><input type="reset" name="reset"></td>
+					</tr>
+
+					
+
+				</table>
+			</form>
+			</div>
+			
+		</div>
+	</body>
+</html> 
