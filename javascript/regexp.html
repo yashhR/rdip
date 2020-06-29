@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+<p>hello world</p>
+
+<button onclick="fnc()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+function fnc() {
+  var str = "hello world";
+  var patt = /World/i;
+  var result = str.match(patt);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
