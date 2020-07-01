@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click on the first button to check the output displayed on the button itslef</p><br>
+<button onclick="this.innerHTML=Date()">The time is?</button><br><br>
+<p>Second button gives the output in new line</p>
+<button onclick="displayDate()">The Date is?</button>
+<script>
+function displayDate()
+{
+	document.getElementById("demo").innerHTML = Date();
+
+}
+</script>
+
+
+<p id="demo"></p>
+
+</body>
+</html>

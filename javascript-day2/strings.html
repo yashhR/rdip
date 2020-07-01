@@ -1,0 +1,16 @@
+
+<html>
+<body>
+<p id="demo">HTML,is, the, standard, markup, language, for, Web, pages,used, to, create, websites</p><br>
+<b>Click here for 5th,7th and 10th words</b><br>
+<button type="button" onclick="myfun()">Here</button><br>
+<p id="str1"></p>
+<script>
+function myfun(){
+var str=document.getElementById("demo").innerHTML;
+var arr=str.split(",");
+document.getElementById("str1").innerHTML = arr[5]+"<br>"+arr[7]+"<br>"+arr[10];
+}
+</script>
+</body>
+</html>

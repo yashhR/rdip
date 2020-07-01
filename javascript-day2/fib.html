@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>
+		fibonacci
+	</title>
+</head>
+<body>
+	<p>Enter the number for fibonacci series</p>
+<button onclick="fib()">submit</button>
+<p id="demo"></p>
+<script>
+
+function fib(){
+var x=prompt("Enter the number for fibonacci series");
+if(x>= 10 && x<=100){
+var a,b,fir;
+a=0;
+b=1;
+fir=a;
+for(var i=1;i<x;i++){
+document.write(fir+"<br>");
+fir =a+b;
+a=b;
+b=fir;
+}
+}
+else{
+alert("input between 10 and 100");
+}
+}
+</script>
+</body>
+</html

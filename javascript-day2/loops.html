@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Enter a number in between 10 and 100:</h2>
+<h3>Click submit to view the fibonacci series</h3>
+
+<input id="loop1" type="text" min="10" max="100" required>
+<button type="button" onclick="myFunction()">submit</button>
+<p id="loop2"></p>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("loop2");
+  message.innerHTML = "";
+  x = document.getElementById("loop1").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 10)  throw "too low";
+    if(x > 100)   throw "too high";
+  if(x>= 10 && x<=100){
+        var a,b,fib;
+        a=0;
+        b=1;
+        fib=a;
+        for(var i=1;i<x;i++){
+            document.write(fib+"<br>");
+            fib =a+b;
+            a=b;
+            b=fib;
+        }
+    }
+    else{
+        alert("Input should be in between 10 and 100");
+        }
+
+  }
+  catch(err) {
+    message.innerHTML = "Eroor is" + err;
+  }
+}
+</script>
+
+</body>
+</html>
