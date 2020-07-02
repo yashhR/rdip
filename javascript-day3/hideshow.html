@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <style>
+  span {
+    background: #def3ca;
+    padding: 3px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script>
+    function myFun(){
+      alert("Press show button to display the contents back!")
+    }
+  </script>
+</head>
+<body>
+<p>Click Hide Button to hide the contents displayed on the file<br></p>
+<button onclick='myFun()' id="hider">Hide</button>
+<button id="shower">Show</button><br><br>
+<div>
+  <span>I'm</span> <span>A</span> <span>Magical</span>
+  <span>text</span> <span>which</span> <span>appears</span>
+  <span>and</span> <span>disappears</span>
+</div>
+ 
+<script>
+$( "#hider" ).click(function() {
+  $( "span:last-child" ).hide( "slow", function() {
+    // Use arguments.callee so we don't need a named function
+    $( this ).prev().hide( "slow", arguments.callee );
+  });
+});
+$( "#shower" ).click(function() {
+  $( "span" ).show( 1000 );
+});
+</script>
+ 
+</body>
+</html>
