@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Double Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+    <script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#gfg").toggle(); 
+            }); 
+        }); 
+    </script> 
+ 
+<style> 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:blue;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:red;
+    border:solid 1px;
+}
+</style>
+</head>
+<body>
+<div class="divClass1">Click here to change color</div>
+</body>
+</html>

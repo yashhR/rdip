@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("getpost.asp",
+    {
+      name: "Yashwanth R",
+      course: "CSE"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+</head>
+<body>
+<p>Click the bellow button to send an HTTP POST request to a page and get the result back</p>
+<button>Click here</button>
+
+</body>
+</html>
